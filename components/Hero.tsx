@@ -1,62 +1,60 @@
-"use client";
-
-import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden flex items-center justify-center px-6">
+    <section className="relative pt-28 px-6">
 
-      {/* Glow Background */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-purple-700/20 blur-[180px]" />
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-fuchsia-600/20 blur-[160px]" />
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[900px] h-[900px] bg-purple-600/20 blur-[180px]" />
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto text-center">
+      <div className="relative max-w-7xl mx-auto">
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+        <Image
+          src="/images/banner-criadoria.png"
+          alt="CriadorIA"
+          width={1920}
+          height={640}
+          priority
+          className="rounded-3xl border border-purple-500/20 shadow-[0_0_80px_rgba(168,85,247,0.25)]"
+        />
 
-          <span className="inline-block mb-6 px-4 py-2 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-300 text-sm">
-            🚀 Plataforma de Marketing com IA
-          </span>
+        <div className="flex flex-col md:flex-row justify-center gap-4 mt-8">
 
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+          <a
+            href="#oferta"
+            className="bg-purple-600 hover:bg-purple-500 transition px-8 py-4 rounded-xl font-semibold"
+          >
+            🚀 Quero Acessar Agora
+          </a>
 
-            Pare de ficar
-            <span className="block bg-gradient-to-r from-purple-400 via-fuchsia-400 to-purple-600 bg-clip-text text-transparent">
-              em branco.
-            </span>
+          <a
+            href="#recursos"
+            className="border border-white/10 px-8 py-4 rounded-xl hover:bg-white/5 transition"
+          >
+            Ver Recursos
+          </a>
 
-            O CriadorIA cria por você.
-          </h1>
+        </div>
 
-          <p className="mt-8 text-lg md:text-xl text-slate-300 max-w-3xl mx-auto">
-            Crie conteúdos, copies de vendas, calendários de postagem e
-            estratégias completas utilizando Inteligência Artificial.
-          </p>
+        <div className="grid md:grid-cols-3 gap-4 mt-12">
 
-          <div className="mt-10 flex flex-col md:flex-row justify-center gap-4">
-
-            <a
-              href="#oferta"
-              className="px-8 py-4 rounded-xl bg-purple-600 hover:bg-purple-500 transition"
-            >
-              🚀 Quero Acessar Agora
-            </a>
-
-            <a
-              href="#beneficios"
-              className="px-8 py-4 rounded-xl border border-white/10 hover:bg-white/5 transition"
-            >
-              Ver Recursos
-            </a>
-
+          <div className="p-5 rounded-2xl bg-white/5 border border-white/10 text-center">
+            <h3 className="text-3xl font-bold text-purple-400">+1000</h3>
+            <p className="text-slate-400">Conteúdos Gerados</p>
           </div>
-        </motion.div>
+
+          <div className="p-5 rounded-2xl bg-white/5 border border-white/10 text-center">
+            <h3 className="text-3xl font-bold text-purple-400">+300</h3>
+            <p className="text-slate-400">Empreendedores Impactados</p>
+          </div>
+
+          <div className="p-5 rounded-2xl bg-white/5 border border-white/10 text-center">
+            <h3 className="text-3xl font-bold text-purple-400">40h</h3>
+            <p className="text-slate-400">Economizadas por Mês</p>
+          </div>
+
+        </div>
 
       </div>
     </section>

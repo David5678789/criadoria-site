@@ -13,8 +13,24 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "CriadorIA",
-  description: "Seu Agente de Marketing Inteligente",
+  title: "CriadorIA - Marketing Inteligente com IA",
+  description:
+    "Crie conteúdos, copies de vendas, calendários de conteúdo e estratégias completas utilizando Inteligência Artificial.",
+  keywords: [
+    "IA",
+    "Marketing Digital",
+    "Copy de Vendas",
+    "ChatGPT",
+    "Conteúdo",
+    "CriadorIA",
+    "Marketing Inteligente",
+  ],
+  openGraph: {
+    title: "CriadorIA",
+    description:
+      "Seu agente de Marketing Inteligente para criar conteúdos e vender mais.",
+    images: ["/images/banner-criadoria.png"],
+  },
 };
 
 export default function RootLayout({
