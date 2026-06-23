@@ -15,7 +15,7 @@ export default function Footer() {
           </p>
   
           <a
-            href="href="https://pay.hotmart.com/B106353943T""
+            href="https://pay.hotmart.com/B106353943T"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex px-8 py-4 rounded-xl bg-purple-600 hover:bg-purple-500 transition"
