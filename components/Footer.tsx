@@ -1,33 +1,33 @@
 export default function Footer() {
-    return (
-      <footer
-        id="oferta"
-        className="py-24 px-6 border-t border-white/10"
-      >
-        <div className="max-w-5xl mx-auto text-center">
-  
-          <h2 className="text-5xl font-bold mb-6">
-            Pronto para vender mais com IA?
-          </h2>
-  
-          <p className="text-slate-400 text-xl mb-10">
-            Pare de perder tempo criando conteúdo do zero.
-          </p>
-  
-          <a
-            href="https://pay.hotmart.com/B106353943T"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex px-8 py-4 rounded-xl bg-purple-600 hover:bg-purple-500 transition"
-          >
-            🚀 Quero Acessar o CriadorIA
-          </a>
-  
-          <div className="mt-16 text-slate-500">
-            © 2026 CriadorIA. Todos os direitos reservados.
+  return (
+    <footer className="border-t border-white/10 py-10">
+      <div className="max-w-7xl mx-auto px-6">
+
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+
+          <div>
+            <h3 className="text-xl font-bold">
+              Criador<span className="text-purple-500">IA</span>
+            </h3>
+
+            <p className="text-slate-500 text-sm mt-2">
+              Marketing Inteligente com IA.
+            </p>
           </div>
-  
+
+          <div className="flex gap-6 text-slate-400 text-sm">
+            <a href="#beneficios">Benefícios</a>
+            <a href="#recursos">Recursos</a>
+            <a href="#faq">FAQ</a>
+          </div>
+
         </div>
-      </footer>
-    );
-  }
+
+        <div className="border-t border-white/10 mt-8 pt-6 text-center text-slate-500 text-sm">
+          © 2026 CriadorIA. Todos os direitos reservados.
+        </div>
+
+      </div>
+    </footer>
+  );
+}
